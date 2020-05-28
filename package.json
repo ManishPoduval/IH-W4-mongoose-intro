@@ -1,0 +1,24 @@
+{
+  "name": "IH-W4-mongoose-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ManishPoduval/IH-W4-mongoose-intro.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ManishPoduval/IH-W4-mongoose-intro/issues"
+  },
+  "homepage": "https://github.com/ManishPoduval/IH-W4-mongoose-intro#readme",
+  "dependencies": {
+    "mongoose": "^5.9.16",
+    "nodemon": "^2.0.4"
+  }
+}

@@ -1,14 +1,13 @@
 const mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost:27017/test', {useNewUrlParser: true, useUnifiedTopology: true})
-    .then(() => {
-        console.log('Yayyy Database is connected');
-    })
-    .catch(() => {
-        console.log('Something went wrong!');
-    })
+require('./config/database.config')
 
+let Student = require('./models/Students.model')
 
-let Student = mongoose.model('student', {name: String});
+// Student.create({name: 'Manish'});
+// Student.create({name: 'Jorge', age: 23});
 
-Student.create({name: 'Manish'});
+Student.insertMany([{name: 'Manish'}, {name: 'Manish1'}])
+     .then((res) => {
+         console.log('Data added', res)
+     })
